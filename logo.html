@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo - HTML5 ProFin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="logo.html">Logo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <h2>Logotipo</h2>
+            <canvas id="logoCanvas" width="200" height="200"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos de autor © 2023 HTML5 ProFin</p>
+    </footer>
+
+
+    <script>
+        const canvas = document.getElementById("logoCanvas");
+        const context = canvas.getContext("2d");
+
+
+        context.beginPath();
+        context.arc(100, 100, 50, 0, 2 * Math.PI);
+        context.fillStyle = "red";
+        context.fill();
+        context.closePath();
+    </script>
+</body>
+
+</html>
